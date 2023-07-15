@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1{
+    @apply mediu:tw-mt-[60px] tw-mt-[200px]
+  }
+  body{
+    @apply dark:tw-bg-albastru_fundal dark:tw-text-verde_d tw-bg-aquamarin tw-text-albastru_fundal
+  }
+  img{
+    @apply tw-border-albastru_fundal dark:tw-border-albastru_d tw-border-4
+  }
+  form{
+    @apply tw-grid tw-gap-2 mediu:tw-grid-cols-2 mediu:tw-w-1/3
+  }
+  select{
+    @apply hover:dark:tw-bg-albastru_d dark:tw-bg-albastru_i hover:tw-bg-albastru_i tw-bg-albastru_fundal disabled:!tw-bg-transparent
+  }
+  input{
+    @apply hover:dark:tw-bg-albastru_d dark:tw-bg-albastru_i hover:tw-bg-albastru_i tw-bg-albastru_fundal tw-text-albastru_d dark:tw-text-verde_d
+  }
+  a{
+    @apply tw-font-semibold hover:tw-font-bold
+  }
+}
+
+@layer components{
+  .buton {
+    @apply tw-bg-albastru_d tw-text-aquamarin dark:tw-text-albastru_fundal dark:tw-bg-aquamarin dark:hover:tw-bg-albastru_d tw-rounded-xl tw-px-4 tw-py-2 hover:tw-bg-albastru_i disabled:!tw-bg-transparent disabled:!tw-text-transparent  hover:!tw-font-normal !tw-font-normal
+  }
+  .nav{
+    @apply mediu:!tw-mt-[-62px] mediu:tw-py-3 !tw-mt-[-200px] tw-fixed tw-w-full tw-flex mediu:tw-flex-row tw-flex-col tw-items-center dark:tw-bg-verde_i tw-bg-verde_i tw-justify-center tw-border-b-2 tw-border-albastru_fundal dark:tw-border-verde_d
+  }
+  .nav-opt{
+    @apply tw-flex mediu:tw-flex-row tw-flex-col mediu:tw-gap-5 mediu:tw-text-xl tw-text-3xl
+  }
+  .nav-nume{
+    @apply mediu:tw-text-3xl tw-basis-5/6 tw-text-5xl
+  }
+  .tab-profil{
+    @apply tw-inline-block mediu:tw-border-b-0 tw-border-b tw-border-l tw-border-t tw-border-r tw-rounded-t tw-py-2 tw-px-4 tw-font-semibold dark:tw-text-albastru_i tw-text-albastru_fundal hover:!tw-text-albastru_d
+  }
+  .tab-profil-activ{
+    @apply dark:tw-bg-aquamarin tw-bg-albastru_i
+  }
+  .titlu{
+    @apply tw-text-3xl tw-font-bold tw-underline
+  }
+  .eroare-camp{
+    @apply invalid:!tw-border-rosu_eroare invalid:!tw-text-rosu_eroare required:!tw-border-rosu_required required:!tw-text-rosu_required
+  }
+  .checkbox{
+    @apply tw-bg-albastru_fundal !tw-text-albastru_d dark:tw-bg-albastru_d dark:!tw-text-aquamarin tw-rounded-2xl checked:tw-bg-albastru_d dark:checked:tw-bg-aquamarin tw-h-8 tw-w-8
+  }
+  .container{
+    @apply mare:tw-w-[850px] tw-border-2 tw-rounded-md tw-justify-center tw-items-center tw-text-center tw-border-albastru_d tw-flex mediu:tw-flex-row tw-flex-col mediu:tw-gap-2 tw-m-2 tw-p-2
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
